@@ -13,16 +13,23 @@ A modern, responsive, and dark-themed personal portfolio built with **Flutter We
 
 ## About Me
 
-I am **Muhammad Khabab**, a **Senior Full Stack (Web & App) Developer**.  
-I build fast, scalable, and modern solutions using technologies like Flutter, Java, Android Studio, and Firebase.
+I am **Muhammad Khabab**, a **Senior Flutter App Developer** with strong **Java** fundamentals.  
+I build production-ready cross-platform mobile apps using the complete Flutter development flow: architecture, UI/UX implementation, state management, API integration, performance optimization, testing, release builds, and post-launch updates.
 
-## Tech Stack
+I also have hands-on experience publishing and maintaining apps on both:
+- **Google Play Store** (Play Console)
+- **Apple App Store** (App Store Connect)
 
-- Flutter Web
+## Flutter Stack
+
+- Flutter
 - Dart
+- Java
 - Firebase
 - GetX
+- REST API Integration
 - Responsive UI Design
+- Play Store & App Store Release Management
 
 ## Run Locally
 
