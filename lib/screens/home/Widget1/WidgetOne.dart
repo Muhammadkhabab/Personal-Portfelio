@@ -68,201 +68,207 @@ class WidgetOne extends StatelessWidget {
               ? const NeverScrollableScrollPhysics()
               : const BouncingScrollPhysics(),
           child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          mainAxisAlignment: utils.desktopMode(context)
-              ? MainAxisAlignment.spaceEvenly
-              : MainAxisAlignment.start,
-          children: [
-            Obx(
-              () => RichText(
-                text: TextSpan(children: [
-                  TextSpan(
-                      text: "<span>",
-                      style: TextStyle(
-                          color: Colors.pink,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 18)),
-                  TextSpan(
-                      text: " Hey, I am ${utils.displayName} ",
-                      style: TextStyle(
-                          color: colors.getTextColor(), fontSize: 18)),
-                  widgetOneController.isBlink.value
-                      ? TextSpan(
-                          text: "| ",
-                          style: TextStyle(
-                              color: Colors.orange,
-                              fontSize: 18,
-                              fontWeight: FontWeight.bold))
-                      : TextSpan(
-                          text: "  ",
-                          style: TextStyle(
-                              color: Colors.orange,
-                              fontSize: 18,
-                              fontWeight: FontWeight.bold)),
-                  TextSpan(
-                      text: "</span>",
-                      style: TextStyle(
-                          color: Colors.pink,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 18)),
-                ]),
-              ),
-            ),
-            Obx(
-              () => RichText(
-                text: TextSpan(children: [
-                  TextSpan(
-                      text: "Senior Full Stack\n",
-                      style: TextStyle(
-                          color: colors.getTextColor(),
-                          fontWeight: FontWeight.bold,
-                          fontSize: utils.desktopMode(context) ? 45 : 28,
-                          letterSpacing: 2)),
-                  TextSpan(
-                      text: "{Web & App}\n",
-                      style: TextStyle(
-                          color: colors.green,
-                          fontSize: utils.desktopMode(context) ? 45 : 30,
-                          letterSpacing: 2)),
-                  TextSpan(
-                      text: "developer",
-                      style: TextStyle(
-                          color: colors.getTextColor(),
-                          fontWeight: FontWeight.bold,
-                          fontSize: utils.desktopMode(context) ? 45 : 30,
-                          letterSpacing: 2)),
-                  widgetOneController.isBlink.value
-                      ? TextSpan(
-                          text: "_ ",
-                          style: TextStyle(
-                              color: colors.getTextColor(),
-                              fontSize: utils.desktopMode(context) ? 45 : 30,
-                              letterSpacing: 2,
-                              fontWeight: FontWeight.bold))
-                      : TextSpan(
-                          text: "  ",
-                          style: TextStyle(
-                              color: colors.getTextColor(),
-                              fontSize: utils.desktopMode(context) ? 45 : 30,
-                              letterSpacing: 2,
-                              fontWeight: FontWeight.bold)),
-                ]),
-              ),
-            ),
-            SizedBox(
-              width: utils.desktopMode(context)
-                  ? utils.getScreenWidth(context) / 2
-                  : utils.getScreenWidth(context),
-              child: RichText(
-                text: TextSpan(
-                    style: TextStyle(letterSpacing: 2, fontSize: utils.desktopMode(context)?18:16),
-                    children: [
-                      TextSpan(
-                          text: "<p>",
-                          style: TextStyle(
-                              color: Colors.pink,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 18)),
-                      TextSpan(
-                          text:
-                              " With expertise in cutting-edge technologies such as ",
-                          style: TextStyle(
-                            color: colors.getTextColor(),
-                          )),
-                      TextSpan(
-                          text: " Java",
-                          style: TextStyle(
-                              color: Colors.pink, fontWeight: FontWeight.bold)),
-                      TextSpan(
-                          text: ", \n",
-                          style: TextStyle(
-                            color: colors.getTextColor(),
-                          )),
-                      TextSpan(
-                          text: " Flutter",
-                          style: TextStyle(
-                              color: Colors.pink, fontWeight: FontWeight.bold)),
-                      TextSpan(
-                          text: ", ",
-                          style: TextStyle(color: colors.getTextColor())),
-                      TextSpan(
-                          text: " Android Studio",
-                          style: TextStyle(
-                              color: Colors.pink, fontWeight: FontWeight.bold)),
-                      TextSpan(
-                          text: ", ",
-                          style: TextStyle(
-                            color: colors.getTextColor(),
-                          )),
-                      TextSpan(
-                          text: " and ",
-                          style: TextStyle(
-                            color: colors.getTextColor(),
-                          )),
-                      TextSpan(
-                          text: " Firebase",
-                          style: TextStyle(
-                              color: Colors.pink, fontWeight: FontWeight.bold)),
-                      TextSpan(
-                          text: "... ",
-                          style: TextStyle(
-                            color: colors.getTextColor(),
-                          )),
-                      TextSpan(
-                          text:
-                              "I deliver mobile and web solutions that are both innovative and robust.",
-                          style: TextStyle(
-                            color: colors.getTextColor(),
-                          )),
-                      TextSpan(
-                        text: "</p>",
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: utils.desktopMode(context)
+                ? MainAxisAlignment.spaceEvenly
+                : MainAxisAlignment.start,
+            children: [
+              Obx(
+                () => RichText(
+                  text: TextSpan(children: [
+                    TextSpan(
+                        text: "<span>",
                         style: TextStyle(
-                          color: Colors.pink,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ]),
+                            color: Colors.pink,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18)),
+                    TextSpan(
+                        text: " Hey, I am ${utils.displayName} ",
+                        style: TextStyle(
+                            color: colors.getTextColor(), fontSize: 18)),
+                    widgetOneController.isBlink.value
+                        ? TextSpan(
+                            text: "| ",
+                            style: TextStyle(
+                                color: Colors.orange,
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold))
+                        : TextSpan(
+                            text: "  ",
+                            style: TextStyle(
+                                color: Colors.orange,
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold)),
+                    TextSpan(
+                        text: "</span>",
+                        style: TextStyle(
+                            color: Colors.pink,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18)),
+                  ]),
+                ),
               ),
-            ),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                SkillIconMarqueeRows(
-                  scrollController1: widgetOneController.scrollController,
-                  scrollController2: widgetOneController.scrollController2,
-                  tileSize: 70,
-                  horizontalPadding: 16,
-                  rowSpacing: 10,
+              Obx(
+                () => RichText(
+                  text: TextSpan(children: [
+                    TextSpan(
+                        text: "Senior Full Stack\n",
+                        style: TextStyle(
+                            color: colors.getTextColor(),
+                            fontWeight: FontWeight.bold,
+                            fontSize: utils.desktopMode(context) ? 45 : 28,
+                            letterSpacing: 2)),
+                    TextSpan(
+                        text: "{Web & App}\n",
+                        style: TextStyle(
+                            color: colors.green,
+                            fontSize: utils.desktopMode(context) ? 45 : 30,
+                            letterSpacing: 2)),
+                    TextSpan(
+                        text: "developer",
+                        style: TextStyle(
+                            color: colors.getTextColor(),
+                            fontWeight: FontWeight.bold,
+                            fontSize: utils.desktopMode(context) ? 45 : 30,
+                            letterSpacing: 2)),
+                    widgetOneController.isBlink.value
+                        ? TextSpan(
+                            text: "_ ",
+                            style: TextStyle(
+                                color: colors.getTextColor(),
+                                fontSize: utils.desktopMode(context) ? 45 : 30,
+                                letterSpacing: 2,
+                                fontWeight: FontWeight.bold))
+                        : TextSpan(
+                            text: "  ",
+                            style: TextStyle(
+                                color: colors.getTextColor(),
+                                fontSize: utils.desktopMode(context) ? 45 : 30,
+                                letterSpacing: 2,
+                                fontWeight: FontWeight.bold)),
+                  ]),
                 ),
-                const SizedBox(height: 6),
-                MyText(
-                  text: " ...and more",
-                  isBold: false,
-                  letterSpacing: 2,
+              ),
+              SizedBox(
+                width: utils.desktopMode(context)
+                    ? utils.getScreenWidth(context) / 2
+                    : utils.getScreenWidth(context),
+                child: RichText(
+                  text: TextSpan(
+                      style: TextStyle(
+                          letterSpacing: 2,
+                          fontSize: utils.desktopMode(context) ? 18 : 16),
+                      children: [
+                        TextSpan(
+                            text: "<p>",
+                            style: TextStyle(
+                                color: Colors.pink,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18)),
+                        TextSpan(
+                            text:
+                                " With expertise in cutting-edge technologies such as ",
+                            style: TextStyle(
+                              color: colors.getTextColor(),
+                            )),
+                        TextSpan(
+                            text: " Java",
+                            style: TextStyle(
+                                color: Colors.pink,
+                                fontWeight: FontWeight.bold)),
+                        TextSpan(
+                            text: ", \n",
+                            style: TextStyle(
+                              color: colors.getTextColor(),
+                            )),
+                        TextSpan(
+                            text: " Flutter",
+                            style: TextStyle(
+                                color: Colors.pink,
+                                fontWeight: FontWeight.bold)),
+                        TextSpan(
+                            text: ", ",
+                            style: TextStyle(color: colors.getTextColor())),
+                        TextSpan(
+                            text: " Android Studio",
+                            style: TextStyle(
+                                color: Colors.pink,
+                                fontWeight: FontWeight.bold)),
+                        TextSpan(
+                            text: ", ",
+                            style: TextStyle(
+                              color: colors.getTextColor(),
+                            )),
+                        TextSpan(
+                            text: " and ",
+                            style: TextStyle(
+                              color: colors.getTextColor(),
+                            )),
+                        TextSpan(
+                            text: " Firebase",
+                            style: TextStyle(
+                                color: Colors.pink,
+                                fontWeight: FontWeight.bold)),
+                        TextSpan(
+                            text: "... ",
+                            style: TextStyle(
+                              color: colors.getTextColor(),
+                            )),
+                        TextSpan(
+                            text:
+                                "I deliver mobile and web solutions that are both innovative and robust.",
+                            style: TextStyle(
+                              color: colors.getTextColor(),
+                            )),
+                        TextSpan(
+                          text: "</p>",
+                          style: TextStyle(
+                            color: Colors.pink,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ]),
                 ),
-              ],
-            ),
-            InkWell(
-              onTap: () {},
-              onHover: (value) {},
-              child: Row(
+              ),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  FaIcon(
-                    FontAwesomeIcons.download,
-                    color: colors.green,
-                    size: 18,
+                  SkillIconMarqueeRows(
+                    scrollController1: widgetOneController.scrollController,
+                    scrollController2: widgetOneController.scrollController2,
+                    tileSize: 70,
+                    horizontalPadding: 16,
+                    rowSpacing: 10,
                   ),
+                  const SizedBox(height: 6),
                   MyText(
-                    text: " Download CV",
+                    text: " ...and more",
                     isBold: false,
                     letterSpacing: 2,
-                    fontSize: 16,
-                  )
+                  ),
                 ],
               ),
-            ),
-          ],
-        ),
+              InkWell(
+                onTap: () {},
+                onHover: (value) {},
+                child: Row(
+                  children: [
+                    FaIcon(
+                      FontAwesomeIcons.download,
+                      color: colors.green,
+                      size: 18,
+                    ),
+                    MyText(
+                      text: " Download CV",
+                      isBold: false,
+                      letterSpacing: 2,
+                      fontSize: 16,
+                    )
+                  ],
+                ),
+              ),
+            ],
+          ),
         ),
       )
     ];
